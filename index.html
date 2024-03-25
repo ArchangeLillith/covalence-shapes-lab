@@ -20,7 +20,11 @@
 			<div class="square">
 				<h4>Square</h4>
 				<label for="square-side-length">Side Length: </label>
-				<input type="number" placeholder="Side length..." id="square-side-length" />
+				<input
+					type="number"
+					placeholder="Side length..."
+					id="square-side-length"
+				/>
 				<button id="add-square">Insert</button>
 			</div>
 			<div class="triangle">
@@ -40,28 +44,43 @@
 		<div class="bottom-area">
 			<!-- Canvas for the shapes to appear on -->
 			<div
-				style="height: 600px; width: 600px; background-color: lightslategray; overflow: hidden;"
+				style="
+					height: 600px;
+					width: 600px;
+					background-color: lightslategray;
+					overflow: hidden;
+				"
 				id="canvas"
 			></div>
 			<div class="side-panel">
-				<label for="shape-name-display">Shape Name:</label>
-				<input id="shape-name-display"></input>
-				<br/>
-				<label for="width-display">Width:</label>
-				<input id="width-display"></input>
-				<br/>
-				<label for="height-display">Height:</label>
-				<input id="height-display"></input>
-				<br/>
-				<label for="radius-display">Radius:</label>
-				<input id="radius-display"></input>
-				<br/>
-				<label for="area-display">Area:</label>
-				<input id="area-display"></input>
-				<br/>
-				<label for="perimeter-display">Perimeter:</label>
-				<input id="perimeter-display"></input>
-				<br/>
+				<label for="shape-name-display"
+					>Shape Name:<span id="shape-name-display"></span
+				></label>
+
+				<br />
+				<label for="width-display"
+					>Width:<span id="width-display"></span
+				></label>
+
+				<br />
+				<label for="height-display"
+					>Height:<span id="height-display"></span
+				></label>
+
+				<br />
+				<label for="radius-display"
+					>Radius:<span id="radius-display"></span
+				></label>
+
+				<br />
+				<label for="area-display">Area: <span id="area-display"></span></label>
+
+				<br />
+				<label for="perimeter-display"
+					>Perimeter: <span id="perimeter-display"></span
+				></label>
+
+				<br />
 			</div>
 		</div>
 	</body>

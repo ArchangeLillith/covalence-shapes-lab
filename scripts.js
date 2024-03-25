@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			this.div.style.width = `${parseInt(radius) * 2}px`;
 			this.div.style.borderRadius = "50%";
 			this.div.className = "Circle";
-			this.area = (parseInt(radius) * 3.14) ^ 2;
-			this.perimeter = parseInt(radius) * 3.14 * 2;
+			this.area = Math.PI * Math.pow(radius, 2);
+			this.perimeter = 2 * Math.PI * radius;
 			canvas.appendChild(this.div);
 		}
 	}
@@ -97,8 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			this.div.style.borderBottom = `${parseInt(height)}px solid yellow`;
 			this.div.style.borderRight = `${parseInt(height)}px solid transparent`;
 			this.div.className = "Triangle";
-			this.area = (parseInt(height) ^ 2) * 0.5;
-			this.perimeter = (2 * parseInt(height)) ^ (2 + Math.sqrt(2));
+			this.area = 0.5 * parseInt(height) * parseInt(height);
+			this.perimeter = 2 * parseInt(height) + Math.sqrt(2) * parseInt(height);
 			canvas.appendChild(this.div);
 		}
 	}
@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			this.className = "Square";
 			this.div.style.backgroundColor = "red";
 			this.div.className = "Square";
-			canvas.appendChild(this.div);
 		}
 	}
 });
