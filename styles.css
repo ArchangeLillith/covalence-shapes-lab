@@ -1,0 +1,29 @@
+.bottom-area {
+	display: flex;
+	margin: 45px;
+}
+
+.input-container {
+	margin-top: 45px;
+	display: flex;
+}
+.input-container > div {
+	margin: 2%;
+	background-color: lightgray;
+	border: 3px solid grey;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#canvas {
+	border: 5px solid black;
+	border-radius: 5px;
+}
+.side-panel {
+	border: 2px solid black;
+	margin-left: 30px;
+	width: 300px;
+	background-color: lightcyan;
+	padding: 10px;
+	border-radius: 5px;
+}

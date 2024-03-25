@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="scripts.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Shape Up</title>
+	</head>
+	<body>
+		<div class="input-container">
+			<div class="rectangle">
+				<h4>Rectangle</h4>
+				<label for="rectangle-width">Width:</label>
+				<input type="number" placeholder="Width..." id="rectangle-width" />
+				<label for="rectangle-height">Height:</label>
+				<input type="number" placeholder="Height..." id="rectangle-height" />
+				<button id="add-rectangle">Insert</button>
+			</div>
+			<div class="square">
+				<h4>Square</h4>
+				<label for="square-side-length">Side Length: </label>
+				<input type="number" placeholder="Side length..." id="square-side-length" />
+				<button id="add-square">Insert</button>
+			</div>
+			<div class="triangle">
+				<h4>Triangle</h4>
+				<label for="triangle-height">Height: </label>
+				<input type="number" placeholder="Height..." id="triangle-height" />
+				<button id="add-triangle">Insert</button>
+			</div>
+			<div class="circle">
+				<h4>Circle</h4>
+				<label for="circle-radius">Radius:</label>
+				<input type="number" placeholder="Radius..." id="circle-radius" />
+				<button id="add-circle">Insert</button>
+			</div>
+		</div>
+		<!-- Inline styling as this will never change and is pretty simple -->
+		<div class="bottom-area">
+			<!-- Canvas for the shapes to appear on -->
+			<div
+				style="height: 600px; width: 600px; background-color: lightslategray; overflow: hidden;"
+				id="canvas"
+			></div>
+			<div class="side-panel">
+				<label for="shape-name-display">Shape Name:</label>
+				<input id="shape-name-display"></input>
+				<br/>
+				<label for="width-display">Width:</label>
+				<input id="width-display"></input>
+				<br/>
+				<label for="height-display">Height:</label>
+				<input id="height-display"></input>
+				<br/>
+				<label for="radius-display">Radius:</label>
+				<input id="radius-display"></input>
+				<br/>
+				<label for="area-display">Area:</label>
+				<input id="area-display"></input>
+				<br/>
+				<label for="perimeter-display">Perimeter:</label>
+				<input id="perimeter-display"></input>
+				<br/>
+			</div>
+		</div>
+	</body>
+</html>
